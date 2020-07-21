@@ -1,0 +1,297 @@
+/* template 1 */
+
+/*login*/
+.bg {
+    background: #97C93D;
+    width: 100%;
+    height: 100%;
+}
+.k-button:focus, .k-button {
+    text-decoration: none;
+    outline: 0;
+    background-color: red;
+    color: #fff;
+}
+.btn-default {
+    text-decoration: none;
+    outline: 0;
+    background-color: #97C93D!important;
+    color: #fff;
+}
+/*FIM login*/
+label {
+    color: #265280;
+    font-weight: 600;
+    font-size: 12px;
+}
+/*Menu navbar e navbar-default */
+.dropdown {
+    position: relative;
+}
+.dropdown-menu>li>a {
+    color: #002E5D!important;
+}
+.navbar-default .navbar-collapse {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caret {
+    padding-top: 5px;
+    margin-left: 5px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fec63e;
+    padding: 15px 0;
+}
+.nav ul li {
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.navbar-nav {
+    margin-bottom: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #002E5D!important;
+    display: inline-block!important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 0;
+    letter-spacing: 
+}
+ .navbar-default .navbar-nav>li>a:hover {  /*cor texto menu HORIZONTAL HOVER*/
+    background-color: #97C93D;
+    color: #fff!important;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    transition: 200ms;
+}
+ .navbar-default .navbar-nav>li>a:visited {
+     color: #265280!important;
+ }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    width: 100%;
+    overflow: hidden;
+}
+/*collapse lista*/
+.fa {
+    position: relative;
+    right: 11px;
+    display: inline-block;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #97C93D;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+/* Buttons */
+
+button.btn-default {
+    color: #fff;
+    background: #97C93D;
+    border-radius: 4px;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+
+.k-button {
+    box-shadow: 0 3px 1px -2px #F2DCC2, 0 2px 2px 0 #8C8072, 0 1px 5px 0 #BFAA8F;
+    font-weight: 500;
+    transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+}
+
+
+.k-button, .k-fieldselector .k-list li.k-item, .k-handle, .k-list-container .k-nodata .k-button, .k-map .k-navigator, .k-numerictextbox .k-select, .k-pivot-toolbar .k-button, .k-spreadsheet-filter, .k-switch-handle, .k-toolbar .k-split-button .k-button {
+    color: #fff;
+    background: #401801;
+    border-color: #D9C3A9;
+}
+/* hover */
+button.btn-default:hover {
+    opacity: 1 !important;
+    background: #97C93D; 
+    color: #002E5D !important;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #97C93D;
+}
+
+/* FIM buttons*/
+
+/* checkbox KENDO */
+.k-checkbox:indeterminate+.k-checkbox-label:before {
+    background-color: #FFF;
+    border-color: #fff;
+}
+.k-checkbox:checked+.k-checkbox-label:before {
+    background-color: #97C93D;
+    border-color: #fff;
+}
+/* k-checked */
+.k-checkbox:checked+.k-checkbox-label:after, .k-checkbox:indeterminate+.k-checkbox-label:after {
+    background-color: #B8DD74;
+    border-color: #FFF;
+}
+
+/* FIM checkbox KENDO */
+/* TEXTO */
+.main-view h1 {
+    color: #265280;
+    font-family: 'Play', sans-serif;
+}
+.main-view h3 {
+    color: #012a60;
+    font-family: 'Play', sans-serif;
+    font-weight: 500;
+}
+
+/*table grid*/
+.k-grid-content tr:last-child td, .k-grid-content-locked tr:last-child td {
+    border-bottom-width: 0;
+    width: 128px;
+}
+/*bola grid*/
+.k-pager-wrap .k-state-selected {
+    color: #012a60;
+    background-color: #B8DD74;
+}
+.k-icon {
+    color: #fff;
+    width: 1em;
+}
+/*CUSTOM MATERIAL*/
+/*scroll grid*/
+.k-grid.k-display-block {
+    overflow-x: scroll;
+    display: block;
+}
+.k-grid-header .k-header, .k-grid-header .k-header a.k-link {
+    color: white !important;
+    width: 128px;
+}
+/* fim scroll grid */
+div.k-grid-header {
+    background-color: #002E5D;
+}
+
+.k-grid-toolbar, .k-grouping-header {
+    color: rgba(0,0,0,.87);
+
+}
+.k-grid-header .k-header {
+    position: relative;
+    vertical-align: bottom;
+    padding: 12px;
+    background-color: #97C93D;
+    color: #9298bb;
+}
+div.k-grid-header {
+    background-color: #97c93D;
+}
+/*button grid*/
+.k-grid-toolbar .k-button {
+    color: #fff;
+    background: #97C93D;
+    border-radius: 4px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    transition: 200ms;
+}
+
+.k-button {
+    color: #fff;
+    background: #97C93D;
+    border-color: #D9C3A9;
+}
+
+.main-view {
+    position: relative;
+}
+.navbar-default {
+        position: relative;
+        top: 0;
+        order: 1 2 1;
+        width: 100%;
+        background: #fff;
+        padding: 15px 0;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+.container-fluid {
+       
+}
+/* nav tab */
+.nav-tabs {
+    background: #97c93d;
+    border-bottom: 1px solid #ddd;
+    border-radius: 15px 15px 0px 0px;
+}
+@media screen and (max-width: 600px)  {
+.navbar-nav {
+    display: grid;
+    text-align: right;
+}
+.navbar-nav {
+    margin: 4.5px -5px;
+}
+    .navbar-default .navbar-collapse {
+        width: 100%;
+        position: relative;
+        top: 60px;
+        left: 15px;
+        right: 15px;
+        overflow: hidden;
+    }
+
+    .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+        padding: 0 0 0 30px;
+    }
+    .main-view h3 {
+        margin-top: 60px;
+    }
+}
+/*media Menu navbar e navbar-default */
+@media screen and (max-width: 1023px)  {
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-view {
+        margin-top: 30px;
+    }
+
+    .navbar-nav>li {
+        margin-top: 20px;
+        float: right;
+    }
+}
+/* FIM  mediaMenu navbar e navbar-default */
