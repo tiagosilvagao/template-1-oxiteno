@@ -164,6 +164,7 @@ button.btn-default:hover {
     color: #012a60;
     font-family: 'Play', sans-serif;
     font-weight: 500;
+    margin-top: 60px;
 }
 
 /*table grid*/
