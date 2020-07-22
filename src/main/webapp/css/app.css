@@ -9,7 +9,7 @@
 .k-button:focus, .k-button {
     text-decoration: none;
     outline: 0;
-    background-color: red;
+    background-color: #265280;
     color: #fff;
 }
 .btn-default {
@@ -57,9 +57,19 @@ label {
 .navbar-nav {
     margin-bottom: 20px;
 }
-
+.navbar-default {
+    background-color: #fff;
+    border: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    color: #265280;
+    font-size: 14px;
+}
 .navbar-default .navbar-nav>li>a {
-    color: #002E5D!important;
+    color: #97C93D;
     display: inline-block!important;
     font-weight: bold;
     text-transform: uppercase;
@@ -67,17 +77,16 @@ label {
     padding: 10px 0;
     letter-spacing: 
 }
- .navbar-default .navbar-nav>li>a:hover {  /*cor texto menu HORIZONTAL HOVER*/
-    background-color: #97C93D;
+
+.navbar-default .navbar-nav>li>a:hover {  /*cor texto menu HORIZONTAL HOVER*/
+    background-color: #265280;
     color: #fff!important;
     padding: 10px;
     border-radius: 4px;
     width: 100%;
-    transition: 200ms;
 }
- .navbar-default .navbar-nav>li>a:visited {
-     color: #265280!important;
- }
+
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     width: 100%;
     overflow: hidden;
@@ -131,14 +140,37 @@ button.btn-default {
 button.btn-default:hover {
     opacity: 1 !important;
     background: #97C93D; 
-    color: #002E5D !important;
+    color: #FFF !important;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #97C93D;
 }
-
+ .navbar-default .navbar-nav>li>a:focus {
+     color: #B8DD74!important;
+ } 
 /* FIM buttons*/
+/*radio buttons*/
+.k-radio:checked+.k-radio-label:after {
+    background-color: #97c93d;
+}
+.k-radio:checked+.k-radio-label:before {
+    border-color: #DDDADA;
+    box-shadow: inset 0 0 1px 0 #fff;
+}
+.k-radio-label:after {
+    background-color: #DDDADA;
+}
 
+/*imagem*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #DDDADA;
+    max-width: 100%;
+    border-radius: 4px;
+}
+/*FIM IMAGEM*/
 /* checkbox KENDO */
 .k-checkbox:indeterminate+.k-checkbox-label:before {
     background-color: #FFF;
@@ -164,7 +196,6 @@ button.btn-default:hover {
     color: #012a60;
     font-family: 'Play', sans-serif;
     font-weight: 500;
-    margin-top: 60px;
 }
 
 /*table grid*/
@@ -192,10 +223,8 @@ button.btn-default:hover {
     width: 128px;
 }
 /* fim scroll grid */
-div.k-grid-header {
-    background-color: #002E5D;
-}
 
+/*barra grid collor*/
 .k-grid-toolbar, .k-grouping-header {
     color: rgba(0,0,0,.87);
 
@@ -204,12 +233,13 @@ div.k-grid-header {
     position: relative;
     vertical-align: bottom;
     padding: 12px;
-    background-color: #97C93D;
+    background-color: #265280;
     color: #9298bb;
 }
 div.k-grid-header {
-    background-color: #97c93D;
+    background-color: #265280;
 }
+/*FIM barra grid collor*/
 /*button grid*/
 .k-grid-toolbar .k-button {
     color: #fff;
@@ -227,17 +257,6 @@ div.k-grid-header {
     border-color: #D9C3A9;
 }
 
-.main-view {
-    position: relative;
-}
-.navbar-default {
-        position: relative;
-        top: 0;
-        order: 1 2 1;
-        width: 100%;
-        background: #fff;
-        padding: 15px 0;
-}
 .container {
     width: 960px;
     margin: 0 auto;
@@ -245,7 +264,11 @@ div.k-grid-header {
     position: relative;
 }
 .container-fluid {
-       
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
 }
 /* nav tab */
 .nav-tabs {
@@ -253,7 +276,11 @@ div.k-grid-header {
     border-bottom: 1px solid #ddd;
     border-radius: 15px 15px 0px 0px;
 }
+
 @media screen and (max-width: 600px)  {
+.main-view {
+    margin-top: 80px;
+}
 .navbar-nav {
     display: grid;
     text-align: right;
@@ -276,7 +303,7 @@ div.k-grid-header {
     .main-view h3 {
         margin-top: 60px;
     }
-}
+/* }
 /*media Menu navbar e navbar-default */
 @media screen and (max-width: 1023px)  {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -295,4 +322,4 @@ div.k-grid-header {
         float: right;
     }
 }
-/* FIM  mediaMenu navbar e navbar-default */
+/*FIM  mediaMenu navbar e navbar-default */
