@@ -1,10 +1,23 @@
 /* template 1 */
-
+a {
+    color: #265280;
+}
 /*login*/
+
 .bg {
-    background: #97C93D;
+    background: #fff;
     width: 100%;
     height: 100%;
+}
+.bg-form {
+    background: #97C93D;
+
+}
+.login-view {
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,.2), 0 0px 0px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    background: #97C93D;
+    padding: 40px 30px 40px 30px;
+    border-radius: 3px;
 }
 .k-button:focus, .k-button {
     text-decoration: none;
@@ -17,6 +30,26 @@
     outline: 0;
     background-color: #97C93D!important;
     color: #fff;
+}
+label.text-user {
+    color: #fff;
+}
+label.text-senha {
+    color: #fff;
+}
+ .k-textbox {
+    border-color: #fff;
+}
+button.btn-login {
+    color: #97C93D !important;
+    background: #fff !important;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 200ms;
+    width: 190px;
+    font-weight: 500;
 }
 /*FIM login*/
 label {
@@ -166,7 +199,7 @@ button.btn-default:hover {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid #DDDADA;
+    border: 2px solid #fff;
     max-width: 100%;
     border-radius: 4px;
 }
@@ -208,6 +241,10 @@ button.btn-default:hover {
     color: #012a60;
     background-color: #B8DD74;
 }
+.k-pager-wrap a.k-pager-refresh:hover {
+    background-color: #265280;
+    color: #3f51b5;
+}
 .k-icon {
     color: #fff;
     width: 1em;
@@ -239,6 +276,15 @@ button.btn-default:hover {
 div.k-grid-header {
     background-color: #265280;
 }
+.k-pager-wrap a.k-pager-refresh {
+    background-color: #97c93d;
+    color: #3f51b5;
+}
+.k-icon {
+    color: #bfbcbc;
+    width: 1em;
+}
+
 /*FIM barra grid collor*/
 /*button grid*/
 .k-grid-toolbar .k-button {
@@ -276,10 +322,32 @@ div.k-grid-header {
     border-bottom: 1px solid #ddd;
     border-radius: 15px 15px 0px 0px;
 }
+/*tabela simples*/
+.table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+    background: #97c93d;
+    color: #fff;
+    font-weight: 400;
+}
+/*fim tabela simples*/
+/*ranger slider*/
+.k-slider .k-draghandle, .k-switch-on .k-switch-handle {
+    color: hsla(0,0%,100%,.87);
+    background-color: #265280;
+    border-color: #265280;
+}
+/*Painel*/
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #97c93d;
+    border-color: #337ab7;
+}
 
+/*fim painel*/
 @media screen and (max-width: 600px)  {
 .main-view {
     margin-top: 80px;
+    padding: 25px;
 }
 .navbar-nav {
     display: grid;

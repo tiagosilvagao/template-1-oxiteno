@@ -3,25 +3,26 @@
     <div class="container-fluid" data-container="true">
         <div class="row component-holder">
             <div class="col-xs-12 col-sm-3 col-lg-4" data-container="true"></div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 login-panel login-view" data-container="true">
-                <form class="form-validation" autocomplete="off" name="form" ng-submit="login()" role="form">
+            <div class="col-xs-12 col-sm-6 login-panel login-view  col-lg-5" data-container="true">
+                <form class="form-validation bg-form" autocomplete="off" name="form" ng-submit="login()" role="form">
                     <div class="text-danger wrapper text-center" ng-show="authError"></div>
-                    <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-image" id="crn-image-823921">
-                        <img src="plugins/cronapp-framework-js/dist/img/logotipo_hor_assinatura_rgb.png" class="" style="display:block; width:60%; height:auto; margin-left:auto; margin-right:auto;" xattr-position="margin-left:auto; margin-right:auto;" data-component="crn-image">
+                    <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12 m-b-20" data-component="crn-image" id="crn-image-823921">
+                        <img src="img/logo-oxiteno-white.png" class="" style="display:block; width:100%; height:auto; margin-left:auto; margin-right:auto;" xattr-position="margin-left:auto; margin-right:auto;" data-component="crn-image">
+                    <!--<div class="col-xs-10 col-md-8 col-md-push-2 col-xs-push-1" data-container="true">-->
+                    <!--    <ul class="list-inline center-block text-center">-->
+                    <!--    </ul>-->
+                    <!--</div>-->
                     </div>
-                    <div class="col-xs-10 col-md-8 col-md-push-2 col-xs-push-1" data-container="true">
-                        <ul class="list-inline center-block text-center">
-                        </ul>
-                    </div>
+
                     <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-283724">
                         <div class="form-group">
-                            <label for="input7274">{{'Login.view.Username' | translate}}</label>
+                            <label class="text-user" for="input7274">{{'Login.view.Username' | translate}}</label>
                             <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" class="form-control k-textbox" id="input7274" placeholder="">
                         </div>
                     </div>
                     <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-343947">
                         <div class="form-group">
-                            <label for="input9836">{{'Login.view.Password' | translate}}</label>
+                            <label class="text-senha" for="input9836">{{'Login.view.Password' | translate}}</label>
                             <input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" class="form-control k-textbox" id="input9836" autocomplete="off" placeholder="">
                         </div>
                     </div>
@@ -33,7 +34,9 @@
                                 {{message.error}}
                             </div>
                         </div>
-                        <button class="btn btn-default col-md-12 col-xs-12 k-button btn-primary" type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button"> <span>{{"Login.view.Login" | translate}} </span></button>
+                        <div style="display: flex; justify-content: center;">
+                            <button class="btn-login m-t-20" type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button"> <span>{{"Login.view.Login" | translate}} </span></button>
+                        </div>                    
                     </div>
                 </form>
                              </div>
