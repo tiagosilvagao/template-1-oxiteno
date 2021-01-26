@@ -1,48 +1,21 @@
-<div class="bg">
-<div class="container-full" data-container="true">
-    <div class="container-fluid" data-container="true">
-        <div class="row component-holder">
-            <div class="col-xs-12 col-sm-3 col-lg-4" data-container="true"></div>
-            <div class="col-xs-12 col-sm-6 login-panel login-view  col-lg-5" data-container="true">
-                <form class="form-validation bg-form" autocomplete="off" name="form" ng-submit="login()" role="form">
-                    <div class="text-danger wrapper text-center" ng-show="authError"></div>
-                    <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12 m-b-20" data-component="crn-image" id="crn-image-823921">
-                        <img src="img/logo-oxiteno-white.png" class="" style="display:block; width:100%; height:auto; margin-left:auto; margin-right:auto;" xattr-position="margin-left:auto; margin-right:auto;" data-component="crn-image">
-                    <!--<div class="col-xs-10 col-md-8 col-md-push-2 col-xs-push-1" data-container="true">-->
-                    <!--    <ul class="list-inline center-block text-center">-->
-                    <!--    </ul>-->
-                    <!--</div>-->
-                    </div>
-
-                    <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-283724">
-                        <div class="form-group">
-                            <label class="text-user" for="input7274">{{'Login.view.Username' | translate}}</label>
-                            <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" class="form-control k-textbox" id="input7274" placeholder="">
-                        </div>
-                    </div>
-                    <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-343947">
-                        <div class="form-group">
-                            <label class="text-senha" for="input9836">{{'Login.view.Password' | translate}}</label>
-                            <input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" class="form-control k-textbox" id="input9836" autocomplete="off" placeholder="">
-                        </div>
-                    </div>
-                    <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-enterprise-checkbox" id="crn-enterprise-checkbox-889238">
-                    </div>
-                    <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-button">
-                        <div class="messages">
-                            <div ng-show="message.error" class="help-block" data-container="true">
-                                {{message.error}}
-                            </div>
-                        </div>
-                        <div style="display: flex; justify-content: center;">
-                            <button class="btn-login m-t-20" type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button"> <span>{{"Login.view.Login" | translate}} </span></button>
-                        </div>                    
-                    </div>
-                </form>
-                             </div>
-            <div class="component-holder ng-binding ng-scope col-xs-12 col-sm-12 col-lg-12" data-component="crn-button" id="crn-button-846239"></div>
-            <div class="col-xs-12 col-sm-3 col-lg-4" data-container="true"></div>
-        </div>
-    </div>
-</div>
-</div>
+<div class="crn-body">
+		<div class="crn-grad"></div>
+		<div class="crn-logo--container">
+    		<div class="crn-logo">
+        		    <img src="img/logo-oxiteno.png">
+    		</div>
+		</div>
+		<div class="crn-header">
+			  <h1 class="text-center title component-holder col-md-12 col-xs-12 col-sm-12 fs-24" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-307023">Nome do projeto</h1><div class="component-holder ng-binding ng-scope col-md-12 col-xs-12 col-sm-12" data-component="crn-textinput" id="crn-textinput-283724">
+			</div>
+		</div>
+		<br>
+		<div class="crn-login">
+            <form class="form-validation" autocomplete="off" name="form" ng-submit="login()" role="form">
+                <div class="text-danger wrapper text-center" ng-show="authError"></div>
+				<input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" id="input7274" placeholder="username" name="user"><br>
+				<input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" id="input9836" autocomplete="off" placeholder="password"><br>
+				<input type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button">
+		    </form>
+		</div>
+	</div>

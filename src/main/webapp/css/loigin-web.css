@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+.crn-body {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/camacariquatro.jpg");
+	/* -webkit-filter: blur(5px); */
+}
+
+.crn-grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+.crn-logo--container {
+	display: flex;
+	justify-content: center;
+}
+.crn-logo {
+    position: absolute;
+    display: inline;
+    top: 20px;
+	z-index: 1;
+}
+.crn-header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+}
+
+.crn-header h1{
+    float: left;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.crn-header h1 span{
+    color: #114C85 !important;
+    font-weight: 500;
+}
+
+.crn-login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(51% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.crn-login input[type=text]{
+    width: 300px;
+    height: 40px;
+    background: #8c8c8c6e;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.crn-login input[type=password]{
+	width: 300px;
+	height: 40px;
+    background: #8c8c8c6e;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.crn-login input[type=button]{
+	width: 300px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+.crn-login input[type=submit]{
+	width: 300px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.crn-login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.crn-login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.crn-login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.crn-login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.crn-login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+@media only screen and (max-width: 600px) {
+	.crn-login {
+		position: absolute;
+		margin: 0 auto;
+		top: calc(50% - 75px);
+		left: 20px;
+		right: 20px;
+		height: 150px;
+		width: 350px;
+		padding: 10px;
+		z-index: 2;
+	}
+	.crn-header {
+		position: absolute;
+		top: calc(31% - 35px);
+		left: calc(30% - 35px);
+		z-index: 2;
+	}
+}
