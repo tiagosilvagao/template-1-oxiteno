@@ -13,8 +13,8 @@
 		<div class="crn-login">
             <form class="form-validation" autocomplete="off" name="form" ng-submit="login()" role="form">
                 <div class="text-danger wrapper text-center" ng-show="authError"></div>
-				<input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" id="input7274" placeholder="username" name="user"><br>
-				<input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" id="input9836" autocomplete="off" placeholder="password"><br>
+				<input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" id="input7274" placeholder="{{'username' | translate}}" name="user"><br>
+				<input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" id="input9836" autocomplete="off" placeholder="{{'password' | translate}}"><br>
 				<input type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button">
 		    </form>
 		</div>

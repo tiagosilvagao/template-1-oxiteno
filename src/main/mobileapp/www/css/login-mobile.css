@@ -5,17 +5,16 @@
     background: #fff;
     width: 100%;
     height: 100%;
-    background-image: url(../img/camacariquatro.jpg);
-    background-repeat: no-repeat;
-    /* -webkit-filter: blur(5px); */
+    background-image: url("../img/camacariquatro.jpg");
+	/* -webkit-filter: blur(5px); */
 }
-
 
 .crn-grad{
 	position: absolute;
 	top: -20px;
 	left: -20px;
 	right: -40px;
+	bottom: -40px;
 	width: auto;
 	height: auto;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
@@ -30,7 +29,7 @@
     position: absolute;
     display: inline;
     top: 20px;
-	z-index: 1;
+
 }
 .crn-header{
 	position: absolute;
@@ -40,28 +39,18 @@
 }
 
 .crn-header h1{
-    float: left;
-    color: #114C85;
-    font-weight: 500;
+	color: #fff;
     font-family: 'Exo', sans-serif;
-    z-index: 1;
-    bottom: 20px;
-}
-
-.crn-header h1 span{
-    color: #114C85 !important;
+    font-size: 32px;
     font-weight: 500;
+    margin-bottom: 50px;
 }
 
-.crn-login{
-	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(51% - 50px);
-	height: 150px;
-	width: 350px;
-	padding: 10px;
-	z-index: 2;
+.crn-header div h1{
+    color: #114C85 !important;
+    font-weight: 400;
 }
+
 
 .crn-login input[type=text]{
     width: 300px;
@@ -77,17 +66,16 @@
 }
 
 .crn-login input[type=password]{
-	width: 300px;
-	height: 40px;
+    width: 300px;
+    height: 40px;
     background: #8c8c8c6e;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px;
 }
 
 .crn-login input[type=button]{
@@ -97,7 +85,7 @@
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #a18d6c;
+	color: #114C85;
 	font-family: 'Exo', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -111,7 +99,7 @@
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #a18d6c;
+	color: #fff;
 	font-family: 'Exo', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -120,11 +108,11 @@
 }
 
 .crn-login input[type=button]:hover{
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .crn-login input[type=button]:active{
-	opacity: 0.6;
+	opacity: 1;
 }
 
 .crn-login input[type=text]:focus{
@@ -142,28 +130,20 @@
 }
 
 ::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
+   color: #fff;
 }
 
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
+::placeholder { 
+  color: #fff;
 }
+    input.crn-place--authentication::placeholder {
+	    color: #fff;
+    }
+
 @media only screen and (max-width: 600px) {
-	.crn-login {
-		position: absolute;
-		margin: 0 auto;
-		top: calc(50% - 75px);
-		left: 20px;
-		right: 20px;
-		height: 150px;
-		width: 350px;
-		padding: 10px;
-		z-index: 2;
-	}
 	.crn-header {
-		position: absolute;
 		top: calc(31% - 35px);
-		left: calc(30% - 35px);
-		z-index: 2;
+    	left: calc(19% - 35px);
+
 	}
 }

@@ -40,12 +40,23 @@ label {
 .crn-label--input {
     color: #fff;
 }
+
+.k-list .k-item:hover
 /*imagem dinâmica*/
 .dynamic-image-container {
     border: 1px dashed #114C85;
     color: #000;
     border-radius: 5px;
     padding: 20px;
+}
+/*Caixa de Seleção*/
+.k-list .k-item.k-state-selected {
+    color: #114C85;
+}
+.k-block>.k-header, .k-calendar .k-calendar-view thead, .k-calendar .k-content thead, .k-calendar .k-header, .k-gantt-views.k-state-expanded, .k-menu-group, .k-menu.k-context-menu, .k-panel>.k-header, .k-popup, .k-treemap .k-treemap-title {
+    color: #727176;
+    background-color: #fff;
+    border-color: rgba(0,0,0,.08);
 }
 /*label-input */
 .k-input.k-textbox.k-state-hover, .k-input.k-textbox:hover, .k-textarea.k-state-hover, .k-textarea:hover, .k-textbox.k-state-hover, .k-textbox:hover {
@@ -70,7 +81,6 @@ a {
 }
 .h1, h1 {
     font-size: 36px;
-    color: #BCBB20;
 }
     /*link*/
     .crn-link--componente {
@@ -179,7 +189,7 @@ a {
     }
     .k-pager-wrap a.k-pager-refresh:hover {
         background-color: #727176;
-        color: #444242;
+        color: #fff;
     }
     .k-pager-wrap .k-state-selected {
         color: #fff;
@@ -205,6 +215,24 @@ a {
         width: 100%;
         overflow-x: auto;
     }
+        /*atualizar focus*/
+        .k-grid tbody .k-button:hover, .k-grid tbody .k-button:focus {
+            background-color: #9CCB00;
+            color: #ffffff;
+        }
+    .k-pager-sizes.k-label {
+        color: #727176;
+    }
+    .k-i-arrow-60-down:before, .k-i-arrow-s:before, .k-i-collapse:before, .k-i-expand-s:before, .k-i-kpi-trend-decrease:before, .k-i-sarrow-s:before {
+        content: "\E006";
+        color: #727176;
+    }
+    .k-dropdown-wrap {
+        color: ##9CCB00;
+    }
+    .k-pager-info.k-label {
+        color: #727176;
+    }
     /*Agendador*/
     .k-widget.k-window .k-window-titlebar .k-window-title {
         color: #114C85;
@@ -215,7 +243,7 @@ a {
         color: #fff;
     }
     .k-header {
-        border-color: #114C85;
+        border-color: #727176;
     }
     .k-scheduler-toolbar, .k-scheduler-toolbar, .k-scheduler-toolbar a.k-link {
         background-color: #114c85;
@@ -351,6 +379,7 @@ a {
     }
     .btn-danger {
         color: #FF534E !important;
+        border-color: #FF534E !important;
         background: transparent !important;
         height: 40px;
         border-radius: 2px;
@@ -373,6 +402,7 @@ a {
     }
     .btn-warning {
         color: #F0AD4E !important;
+        border-color: #F0AD4E;
         background: transparent !important;
         height: 40px;
         border-radius: 2px;
@@ -402,7 +432,8 @@ a {
         border-radius: 2px;
     }
     .btn-link {
-        color: #829840 !important;
+        color: #727176 !important;
+        border-color: #727176;
         background: transparent !important;
         height: 40px;
         border-radius: 2px;
@@ -456,7 +487,7 @@ a {
             font-size: 14px;
         }
         .k-autocomplete, .k-dateinput-wrap, .k-dropdown-wrap, .k-multiselect-wrap, .k-numeric-wrap, .k-picker-wrap {
-            border-color: #114C85;
+            border-color: #727176;
         }
         .k-autocomplete:hover .k-input {
             color: #97C93D;
@@ -487,7 +518,7 @@ a {
     }
     /*Acordeão*/
     .panel-default>.panel-heading {
-        background-color: #282D57;
+        background-color: #114C85;
         border-bottom: 1px solid #114c85;
         color: #fff;
     }
@@ -513,7 +544,15 @@ a {
         font-family: 'Exo', sans-serif;
     }
     /*Fim Banner*/
-
+    /*slider*/
+    .k-button.k-primary, .k-slider .k-draghandle, .k-switch-on .k-switch-handle {
+        color: hsla(0,0%,100%,.87);
+        background-color: #114C85;
+        border-color: #114C85;
+    }
+    .k-slider .k-slider-selection {
+        background-color: #114c85;
+    }
     /*Data*/
         .bootstrap-datetimepicker-widget.dropdown-menu {
             background-color: #fff;
@@ -787,6 +826,10 @@ a {
         font-size: 13px;
         text-transform: lowercase;
 
+    }
+    /*Grid*/
+    .k-grid-pager {
+        overflow: auto;
     }
 
 }
