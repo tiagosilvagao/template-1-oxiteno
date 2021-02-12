@@ -41,16 +41,22 @@
 
 .crn-header h1{
     float: left;
-    color: #114C85;
+    color: #fff;
     font-weight: 500;
     font-family: 'Exo', sans-serif;
     z-index: 1;
     bottom: 20px;
+    background: #8c8c8c8f;
+    padding: 3px;
+    border-radius: 4px;
+}
+.crn-header span {
+	color: #114C85;
 }
 
 .crn-header h1 span{
-    color: #114C85 !important;
-    font-weight: 500;
+    color: #333 !important;
+    font-weight: 600;
 }
 
 .crn-login{

@@ -82,6 +82,117 @@ a {
 .h1, h1 {
     font-size: 36px;
 }
+    /*Caroussel*/
+    .carousel-caption h2 {
+        color: #727671;
+    }
+    .carousel-caption h1 {
+        color: #114C85;
+    }
+    /*Data*/
+    .bootstrap-datetimepicker-widget.dropdown-menu {
+        background-color: #fff;
+        box-shadow: 0 15px 10px rgba(0,0,0,.7);
+    }
+    /*seta mes ano seta*/
+    .bootstrap-datetimepicker-widget table thead tr:first-child th {
+        cursor: pointer;
+        color: #114C85;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .bootstrap-datetimepicker-widget table thead tr th :hover {
+        background: #000;
+    }
+    /*dias da Semana*/
+    .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+        padding: 5px;
+        color: #114C85;
+        text-shadow: 0 1px 1px #fff;
+        font-weight: 600;
+    }
+    /*dias ativos*/
+    .bootstrap-datetimepicker-widget table td.day {
+        line-height: 20px;
+        color: #114C85;
+        font-weight: 600;
+        font-size: 1.2em;
+        width: 2.6em;
+        height: 2.6em;
+        line-height: 20px;
+        border: 1px solid #cfcfcf;
+        border-radius: 0;
+    }
+    /*data selecionada*/
+    .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+        background-color: transparent;
+        border: 1px solid #9CCB00;
+        outline: 1px solid #9CCB00;
+        color: #114C85;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    }
+    .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+        color: #114C85;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    }
+    /*dias desativados*/
+    .bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new {
+        color: #727176;
+        font-weight: 300;
+    }
+    /*footer date*/
+    .bootstrap-datetimepicker-widget .picker-switch td span {
+        line-height: 2.5;
+        height: 2.5em;
+        width: 100%;
+        color: #114C85;
+        background: #fff;
+    }
+    .bootstrap-datetimepicker-widget .picker-switch td span:hover {
+        line-height: 2.5;
+        height: 2.5em;
+        width: 100%;
+        color: #fff;
+        background: #97C93D !important;
+    }
+    /*seleção mês*/
+    .bootstrap-datetimepicker-widget table td span.active {
+        background-color: #114C85;
+        color: #fff;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    }
+/*Fim Data*/
+
+/*Data e Hora*/
+    /*cor hora + indicadores*/
+    .bootstrap-datetimepicker-widget table td span {
+        color: #114C85;
+    }
+
+    /**/
+    .bootstrap-datetimepicker-widget table {
+        border-spacing: 2px;
+        border-collapse: separate;
+    }
+    .bootstrap-datetimepicker-widget table td.today:before {
+        content: '';
+        display: inline-block;
+        border: solid transparent;
+        border-width: 0 0 7px 7px;
+        border-bottom-color: #114C85;
+        border-top-color: rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+    }
+    /*Imagem Dinâmica*/
+    .dynamic-image-container {
+        border-style: dashed;
+        border: 1px dashed #114C85;
+        color: #727176;
+        border-radius: 5px;
+        padding: 20px;
+    }
     /*link*/
     .crn-link--componente {
         color: #829840;
@@ -100,7 +211,7 @@ a {
     /*button*/
     .btn-primary {
         color: #114c85 !important;
-        background-coor: transparent !important;
+        background-color: transparent !important;
         font-weight: 700;
         border: 1px solid;
     }
@@ -110,12 +221,12 @@ a {
     }
     button.btn-default:hover, button.btn-default:focus, button.btn-default:active {
         opacity: 1 !important;
-        background: #114c85;
+        background: #97C93D;
         color: #fff !important;
         box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
     }
     .k-input.k-textbox:focus, .k-textbox:focus {
-        border-color: #DEDC1C;
+        border-color: #97C93D;
     }
     /*Menu*/
         /*botao mobile web*/
@@ -183,12 +294,16 @@ a {
         color: #727176!important;
         font-weight: 500; 
     }
+    .k-grid-header .k-grid-filter:hover, .k-grid-header .k-header-column-menu:hover, .k-grid-header .k-hierarchy-cell .k-icon:hover {
+        color: #DEDC1C !important;
+        background-color: transparent;
+    }
     .k-pager-wrap a.k-pager-refresh {
         background-color: #ffffff;
         color: #9CCB00;
     }
     .k-pager-wrap a.k-pager-refresh:hover {
-        background-color: #727176;
+        background-color: #9CCB00;
         color: #fff;
     }
     .k-pager-wrap .k-state-selected {
@@ -293,7 +408,6 @@ a {
         border: 0px none #97C93D;
         border-left: 1px solid #9A999E;
     }
-
     /* Button */
     .crn-btn--login {
         color: #fff !important;
@@ -303,151 +417,150 @@ a {
         border: solid 1px;
         font-size: 17px;
     }
-    button.crn-btn--login:hover, button.crn-btn--login:focus, button.crn-btn--login:active {
-        opacity: 1 !important;
-        background: transparent;
-        color: #fff !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-        font-size: 17px;
-    }
-    .btn-default {
-        color: #282D57 !important;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-        font-size: 17px;
-    }
-    button.btn-default:hover, button.btn-default:focus, button.btn-default:active {
-        opacity: 1 !important;
-        background: transparent;
-        color: #282D57 !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-        font-size: 17px;
-    }
-    .btn-primary {
-        color: #114C85 !important;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    button.btn-primary:hover, button.btn-primary:focus, button.btn-primary:active {
-        opacity: 1 !important;
-        background: #114c85;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    .btn-info {
-        color: #0097C1 !important;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    button.btn-info:hover, button.btn-info:focus, button.btn-info:active {
-        opacity: 1 !important;
-        background: transparent;
-        color: #0097C1 !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    .btn-success {
-        color: #9CCB00 !important;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    button.btn-success:hover, button.btn-success:focus, button.btn-success:active {
-        opacity: 1 !important;
-        background: transparent !important;
-        color: #3BBD3B !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-    }
-    .btn-danger {
-        color: #FF534E !important;
-        border-color: #FF534E !important;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    button.btn-danger:hover, button.btn-danger:focus, button.btn-danger:active {
-        opacity: 1 !important;
-        background: transparent;
-        color: #FF534E !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-    }
-    
-    .btn-danger:focus, .btn-danger:hover {
-        background-color: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        color: #FF534E !important;
-    }
-    .btn-warning {
-        color: #F0AD4E !important;
-        border-color: #F0AD4E;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    button.btn-warning:hover, button.btn-warning:focus, button.btn-warning:active {
-        opacity: 1 !important;
-        background: transparent;
-        color: #F0AD4E !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-    }
-    .btn-light {
-        color: #FFF !important;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    button.btn-light:hover, button.btn-light:focus, button.btn-light:active {
-        opacity: 1 !important;
-        background: transparent;
-        color: #fff !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px;
-    }
-    .btn-link {
-        color: #727176 !important;
-        border-color: #727176;
-        background: transparent !important;
-        height: 40px;
-        border-radius: 2px;
-        border: solid 1px;
-    }
-    button.btn-link:hover, button.btn-link:focus, button.btn-link:active {
-        opacity: 1 !important;
-        background: transparent;
-        color: #829840 !important;
-        box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
-        height: 40px;
-        border-radius: 2px ;
-        border: solid 1px;
-    }
+        button.crn-btn--login:hover, button.crn-btn--login:focus, button.crn-btn--login:active {
+            opacity: 1 !important;
+            background: transparent;
+            color: #fff !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+            font-size: 17px;
+        }
+        .btn-default {
+            color: #97C93D !important;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+            font-size: 17px;
+        }
+        button.btn-default:hover, button.btn-default:focus, button.btn-default:active {
+            opacity: 1 !important;
+            background: transparent;
+            color: #97C93D !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+            font-size: 17px;
+        }
+        .btn-primary {
+            color: #114C85 !important;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        button.btn-primary:hover, button.btn-primary:focus, button.btn-primary:active {
+            opacity: 1 !important;
+            background: #114c85;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        .btn-success {
+            color: #9CCB00 !important;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        button.btn-success:hover, button.btn-success:focus, button.btn-success:active {
+            opacity: 1 !important;
+            background: transparent !important;
+            color: #9CCB00 !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+        }
+        .btn-info {
+            color: #0097C1 !important;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        button.btn-info:hover, button.btn-info:focus, button.btn-info:active {
+            opacity: 1 !important;
+            background: transparent;
+            color: #0097C1 !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        .btn-warning {
+            color: #DEDC1C !important;
+            border-color: #DEDC1C;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        button.btn-warning:hover, button.btn-warning:focus, button.btn-warning:active {
+            opacity: 1 !important;
+            background: transparent;
+            color: #DEDC1C !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+        }
+        .btn-danger {
+            color: #FF534E !important;
+            border-color: #FF534E !important;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        button.btn-danger:hover, button.btn-danger:focus, button.btn-danger:active {
+            opacity: 1 !important;
+            background: transparent;
+            color: #FF534E !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+        }
+        .btn-danger:focus, .btn-danger:hover {
+            background-color: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            color: #FF534E !important;
+        }
+        .btn-light {
+            color: #FFF !important;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        button.btn-light:hover, button.btn-light:focus, button.btn-light:active {
+            opacity: 1 !important;
+            background: transparent;
+            color: #727176 !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px;
+        }
+        .btn-link {
+            color: #727176 !important;
+            border-color: #727176;
+            background: transparent !important;
+            height: 40px;
+            border-radius: 2px;
+            border: solid 1px;
+        }
+        button.btn-link:hover, button.btn-link:focus, button.btn-link:active {
+            opacity: 1 !important;
+            background: transparent;
+            color: #727176 !important;
+            box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+            height: 40px;
+            border-radius: 2px ;
+            border: solid 1px;
+        }
         /*Check box*/
         .k-checkbox:checked+.k-checkbox-label:after, .k-checkbox:indeterminate+.k-checkbox-label:after {
             background-color: #114C85;
@@ -463,8 +576,8 @@ a {
             border-color: #727176 !important;
         }
         .k-checkbox:indeterminate+.k-checkbox-label:before {
-            background-color: #9A999E;
-            border-color: #727176;
+            background-color: #114C85;
+            border-color: #114C85;
         }
         .k-checkbox-label:before {
             background-color: #fff;
@@ -553,106 +666,6 @@ a {
     .k-slider .k-slider-selection {
         background-color: #114c85;
     }
-    /*Data*/
-        .bootstrap-datetimepicker-widget.dropdown-menu {
-            background-color: #fff;
-            box-shadow: 0 15px 10px rgba(0,0,0,.7);
-        }
-        /*seta mes ano seta*/
-        .bootstrap-datetimepicker-widget table thead tr:first-child th {
-            cursor: pointer;
-            color: #9CCB00;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        .bootstrap-datetimepicker-widget table thead tr th :hover {
-            background: #000;
-        }
-        /*dias da Semana*/
-        .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
-            padding: 5px;
-            color: #97C93D;
-            text-shadow: 0 1px 1px #fff;
-            font-weight: 600;
-        }
-        /*dias ativos*/
-        .bootstrap-datetimepicker-widget table td.day {
-            line-height: 20px;
-            color: #97C93D;
-            font-weight: 600;
-            font-size: 1.2em;
-            width: 2.6em;
-            height: 2.6em;
-            line-height: 20px;
-            border: 1px solid #cfcfcf;
-            border-radius: 0;
-        }
-        /*data selecionada*/
-        .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
-            background-color: transparent;
-            border: 1px solid #9CCB00;
-            outline: 1px solid #9CCB00;
-            color: #9CCB00;
-            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-        }
-        .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
-            color: #97C93D;
-            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-        }
-        /*dias desativados*/
-        .bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new {
-            color: #727176;
-            font-weight: 300;
-        }
-        /*footer date*/
-        .bootstrap-datetimepicker-widget .picker-switch td span {
-            line-height: 2.5;
-            height: 2.5em;
-            width: 100%;
-            color: #31255A;
-            background: #fff;
-        }
-        .bootstrap-datetimepicker-widget .picker-switch td span:hover {
-            line-height: 2.5;
-            height: 2.5em;
-            width: 100%;
-            color: #fff;
-            background: #97C93D !important;
-        }
-        /*seleção mês*/
-        .bootstrap-datetimepicker-widget table td span.active {
-            background-color: #97C93D;
-            color: #fff;
-            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-        }
-    /*Fim Data*/
-
-    /*Data e Hora*/
-        /*cor hora + indicadores*/
-        .bootstrap-datetimepicker-widget table td span {
-            color: #97C93D;
-        }
-
-        /**/
-    .bootstrap-datetimepicker-widget table {
-        border-spacing: 2px;
-        border-collapse: separate;
-    }
-    .bootstrap-datetimepicker-widget table td.today:before {
-        content: '';
-        display: inline-block;
-        border: solid transparent;
-        border-width: 0 0 7px 7px;
-        border-bottom-color: #BCBB20;
-        border-top-color: rgba(0,0,0,0.2);
-        position: absolute;
-        bottom: 4px;
-        right: 4px;
-    }
-        /*lista de opções*/
-        .k-radio:checked+.k-radio-label:after {
-            background-color: #31255A;
-        }
     /*Entrada de texto com ícone */
     .k-input.k-textbox, .k-textarea, .k-textbox {
         padding: 8px 16px;
@@ -828,8 +841,10 @@ a {
 
     }
     /*Grid*/
-    .k-grid-pager {
-        overflow: auto;
+    .k-pager-wrap {
+        white-space: normal;
+        overflow-x: auto;
+        min-width: 500px;
     }
 
 }

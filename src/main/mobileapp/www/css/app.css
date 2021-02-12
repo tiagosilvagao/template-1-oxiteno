@@ -118,7 +118,7 @@ ion-content button {
         }
         .toggle.toggle-stable input:checked + .track {
             border-color: #727671;
-            background-color: #fff;
+            background-color: #727671;
         }
         .toggle.toggle-calm input:checked + .track {
             border-color: #829840;
@@ -169,49 +169,67 @@ ion-content button {
         obs.: estilização quebrando o tema dark do BOTAO com caixa de entrada
         */
         /*Aba*/
-        .tabs-striped.tabs-default .tabs {
-            background-color: #97C93D;
+        .tabs-balanced > .tabs, .tabs.tabs-balanced {
             border-color: #97C93D;
+            background-color: #97C93D;
+            background-image: none;
+            color: #fff;
         }
-        .tabs-striped.tabs-assertive .tabs {
-            background-color: #9CCB00;
-            border-color: #9CCB00;
+        .tabs-assertive > .tabs, .tabs.tabs-assertive {
+            border-color: #97C93D;
+            background-color: #97C93D;
+            background-image: none;
+            color: #fff;
         }
-        .tabs-striped.tabs-balanced .tabs {
-            background-color: #114C85;
+        .tabs-balanced > .tabs, .tabs.tabs-balanced {
             border-color: #114C85;
+            background-color: #114C85;
+            background-image: none;
+            color: #fff;
         }
-        .tabs-striped.tabs-energized .tabs {
-            background-color: #DB9600;
+        .tabs-energized > .tabs, .tabs.tabs-energized {
             border-color: #DB9600;
+            background-color: #DB9600;
+            background-image: none;
+            color: #fff;
         }
-        .tabs-striped.tabs-light .tabs {
-            background-color: #fff;
+        .tabs-light > .tabs, .tabs.tabs-light {
             border-color: #fff;
+            background-color: #fff;
+            background-image: none;
+            color: #727671;
         }
-        .tabs-striped.tabs-stable .tabs {
-            background-color: #727671;
+        .tabs-stable > .tabs, .tabs.tabs-stable {
             border-color: #727671;
+            background-color: #727671;
+            background-image: none;
+            color: #fff;
         }
-            .tabs-striped.tabs-stable .tab-item.tab-item-active, .tabs-striped.tabs-stable .tab-item.active, .tabs-striped.tabs-stable .tab-item.activated {
-                color: #fff;
-            }
-        .tabs-striped.tabs-calm .tabs {
-            background-color: #829840;
+        .tabs-calm > .tabs, .tabs.tabs-calm {
             border-color: #829840;
+            background-color: #829840;
+            background-image: none;
+            color: #fff;
         }
-        .tabs-striped.tabs-positive .tabs {
-            background-color: #001251;
+        .tabs-positive > .tabs, .tabs.tabs-positive {
             border-color: #001251;
+            background-color: #001251;
+            background-image: none;
+            color: #fff;
         }
-        .tabs-striped.tabs-royal .tabs {
-            background-color: #710052;
+        .tabs-royal > .tabs, .tabs.tabs-royal {
             border-color: #710052;
+            background-color: #710052;
+            background-image: none;
+            color: #fff;
         }
-        .tabs-striped.tabs-dark .tabs {
-            background-color: #ABAC9C;
+        .tabs-dark > .tabs, .tabs.tabs-dark {
             border-color: #ABAC9C;
+            background-color: #ABAC9C;
+            background-image: none;
+            color: #fff;
         }
+
       /*botão*/
       .button.button-default {
           border-color: transparent;
@@ -433,76 +451,75 @@ ion-content button {
           fill: #829840 !important;
       }
       /*Checkbox*/
-      /* .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
-          background: #829840;
-          border-color: #829840;
-      } */
-      /*tema checkbox borda*/
-        .checkbox-assertive input:checked:before, .checkbox-assertive input:checked + .checkbox-icon:before {
-            background: #9CCB00;
-            border-color: #9CCB00;
-        }
-        .checkbox-balanced input:checked:before, .checkbox-balanced input:checked + .checkbox-icon:before {
-            background: #114C85;
-            border-color: #114C85;
-        }
-        .checkbox-energized input:checked:before, .checkbox-energized input:checked + .checkbox-icon:before {
-            background: #DB9600;
-            border-color: #DB9600;
-        }
-        .checkbox-light input:checked:before, .checkbox-light input:checked + .checkbox-icon:before {
-            background: #fff;
-            border-color: #fff;
-        }
-        .checkbox-stable input:checked:before, .checkbox-stable input:checked + .checkbox-icon:before {
-            background: #727671;
-            border-color: #727671;
-        }
-        .checkbox-calm input:checked:before, .checkbox-calm input:checked + .checkbox-icon:before {
-            background: #829840;
-            border-color: #829840;
-        }
-        .checkbox-positive input:checked:before, .checkbox-positive input:checked + .checkbox-icon:before {
-            background: #001251;
-            border-color: #001251;
-        }
-        .checkbox-royal input:checked:before, .checkbox-royal input:checked + .checkbox-icon:before {
-            background: #710052;
-            border-color: #710052;
-        }
-        .checkbox-dark input:checked:before, .checkbox-dark input:checked + .checkbox-icon:before {
-            background: #ABAC9C;
-            border-color: #ABAC9C;
-        }
+     .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+        background: #727671;
+        border-color: #97C93D;
+    }
 
-        /*tema Checkbox borda*/
-        .checkbox-assertive input:before, .checkbox-assertive .checkbox-icon:before {
-            border-color: #9CCB00;
-        }
-        .checkbox-balanced input:before, .checkbox-balanced .checkbox-icon:before {
-            border-color: #114C85;
-        }
-        .checkbox-energized input:before, .checkbox-energized .checkbox-icon:before {
-            border-color: #DB9600;
-        }
-        .checkbox-light input:before, .checkbox-light .checkbox-icon:before {
-            border-color: #fff;
-        }
-        .checkbox-stable input:before, .checkbox-stable .checkbox-icon:before {
-            border-color: #727671;
-        }
-        .checkbox-calm input:before, .checkbox-calm .checkbox-icon:before {
-            border-color: #829840;
-        }
-        .checkbox-positive input:before, .checkbox-positive .checkbox-icon:before {
-            border-color: #001251;
-        }
-        .checkbox-royal input:before, .checkbox-royal .checkbox-icon:before {
-            border-color: #710052;
-        }
-        .checkbox-dark input:before, .checkbox-dark .checkbox-icon:before {
-            border-color: #ABAC9C;
-        }
+      /*tema checkbox borda*/
+      .checkbox-assertive input:checked:before, .checkbox-assertive input:checked + .checkbox-icon:before {
+        background: #9CCB00;
+        border-color: #9CCB00;
+    }
+    .checkbox-assertive input:before, .checkbox-assertive .checkbox-icon:before {
+        border-color: #9CCB00;
+    }
+    .checkbox-balanced input:checked:before, .checkbox-balanced input:checked + .checkbox-icon:before {
+        background: #114C85;
+        border-color: #114C85;
+    }
+    .checkbox-balanced input:before, .checkbox-balanced .checkbox-icon:before {
+        border-color: #114C85;
+    }
+    .checkbox-energized input:checked:before, .checkbox-energized input:checked + .checkbox-icon:before {
+        background: #DB9600;
+        border-color: #DB9600;
+    }
+    .checkbox-energized input:before, .checkbox-energized .checkbox-icon:before {
+        border-color: #DB9600;
+    }
+    .checkbox-light input:checked:before, .checkbox-light input:checked + .checkbox-icon:before {
+        background: #727671;
+        border-color: #fff;
+    }
+    .checkbox-light input:before, .checkbox-light .checkbox-icon:before {
+        border-color: #fff;
+    }
+    .checkbox-stable input:checked:before, .checkbox-stable input:checked + .checkbox-icon:before {
+        background: #727671;
+        border-color: #727671;
+    }
+    .checkbox-stable input:before, .checkbox-stable .checkbox-icon:before {
+        border-color: #727671;
+    }
+    .checkbox-calm input:checked:before, .checkbox-calm input:checked + .checkbox-icon:before {
+        background: #829840;
+        border-color: #829840;
+    }
+    .checkbox-calm input:before, .checkbox-calm .checkbox-icon:before {
+        border-color: #829840;
+    }
+    .checkbox-positive input:checked:before, .checkbox-positive input:checked + .checkbox-icon:before {
+        background: #001251;
+        border-color: #001251;
+    }
+    .checkbox-calm input:before, .checkbox-calm .checkbox-icon:before {
+        border-color: #001251;
+    }
+    .checkbox-royal input:checked:before, .checkbox-royal input:checked + .checkbox-icon:before {
+        background: #710052;
+        border-color: #710052;
+    }
+    .checkbox-royal input:before, .checkbox-royal .checkbox-icon:before {
+        border-color: #710052;
+    }
+    .checkbox-dark input:checked:before, .checkbox-dark input:checked + .checkbox-icon:before {
+        background: #ABAC9C;
+        border-color: #ABAC9C;
+    }
+    .checkbox-royal input:before, .checkbox-royal .checkbox-icon:before {
+        border-color: #ABAC9C;
+    }
       /*qr code
       melhor não estilizar,
       tag padrão html (canvas)
