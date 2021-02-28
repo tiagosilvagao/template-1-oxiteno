@@ -1,17 +1,17 @@
 <div class="crn-body">
-		<div class="crn-grad"></div>
-		<div class="crn-logo--container">
+		<div class="crn-grad col-xs-12"></div>
+		<div class="crn-logo--container col-xs-12">
     		<div class="crn-logo">
         		    <img src="img/logo-oxiteno.png">
     		</div>
 		</div>
 		<div class="crn-header">
-            <h1 class="text-center title component-holder fs-24" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-307023">{{"nameProject" | translate}}</h1><div class="component-holder ng-binding ng-scope col-md-12 col-xs-12 col-sm-12" data-component="crn-textinput" id="crn-textinput-283724">
-		</div>
-		<br>
-		<div class="crn-login">
-            <form class="form-validation" autocomplete="off" name="form" role="form">
-				<input class="crn-place--authentication" type="text" autocomplete="username" autocorrect="off" autocapitalize="off" type="text" placeholder="{{'Login.view.Username' | translate}}" ng-model="vars.username"><br>
+            <h1 class="title component-holder fs-24" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-307023">{{"nameProject" | translate}}<span class="crn-nameProject"> {{"projeto" | translate}}</span></h1>
+        </div>
+
+		<div class="crn-login col-xs-12">
+            <form class="form-validation crn-form-login" autocomplete="off" name="form" role="form">
+				<input class="crn-place--authentication" type="text" autocomplete="username" autocorrect="off" autocapitalize="none" placeholder="{{'Login.view.Username' | translate}}" ng-model="vars.username"><br>
 				<input class="crn-place--authentication" autocomplete="current-password" type="password" placeholder="{{'Login.view.Password' | translate}}" ng-model="vars.password"><br>
 				<input class="crn-place" type="button" value="Login" ng-click="cronapi.client('js.blockly.auth.Login.login').run(vars.username, vars.password, null)" data-component="crn-button" id="crn-button-445347" xattr-fullsize="button-full" xattr-theme="button-positive" ng-disabled="form.$invalid || vm.dataLoading">
 		    </form>

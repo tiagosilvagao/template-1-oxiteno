@@ -750,10 +750,78 @@ ion-content button {
         left: 33%;
       }
       h2.crn-projeto-nome {
-        font-size: 14px;
+        position: fixed;
+        bottom: 0;
         font-family: 'Exo', sans-serif;
-        color: #fff;  
-        
+        color: #fff;
+        font-size: 13px;
       }
-      
+
+      @media (min-width: 768px) and (max-width: 1170px) {
+        .tabs-default > .tabs, .tabs.tabs-default {
+            border-color: #7B8F1C;
+            background-color: #7B8F1C !important;
+            background-image: linear-gradient(0deg, #7B8F1C, #A5B658 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-assertive > .tabs, .tabs.tabs-assertive {
+            border-color: #97C93D;
+            background-color: #97C93D !important;
+            background-image: linear-gradient(0deg, #97C93D, #97C93D 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-balanced > .tabs, .tabs.tabs-balanced {
+            border-color: #183258;
+            background-color: #183258 !important;
+            background-image: linear-gradient(0deg, #183258, #183258 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-energized > .tabs, .tabs.tabs-energized {
+            border-color: #DB9600;
+            background-color: #DB9600 !important;
+            background-image: linear-gradient(0deg, #DB9600, #DB9600 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-light > .tabs, .tabs.tabs-light {
+            border-color: #fff;
+            background-color: #fff !important;
+            background-image: linear-gradient(0deg, #fff, #ddd 50%, transparent 50%);
+            color: #E7D8D8;
+        }
+        .tabs-stable > .tabs, .tabs.tabs-stable {
+            border-color: #727671;
+            background-color: #727671 !important;
+            background-image: linear-gradient(0deg, #727671, #444242 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-calm > .tabs, .tabs.tabs-calm {
+            border-color: #829840;
+            background-color: #829840 !important;
+            background-image: linear-gradient(0deg, #829840, #829840 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-positive > .tabs, .tabs.tabs-positive {
+            border-color: #183258;
+            background-color: #183258 !important;
+            background-image: linear-gradient(0deg, #fff, #29417C 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-royal > .tabs, .tabs.tabs-royal {
+            border-color: #710052;
+            background-color: #710052 !important;
+            background-image: linear-gradient(0deg, #710052, #851B68 50%, transparent 50%);
+            color: #fff;
+        }
+        .tabs-dark > .tabs, .tabs.tabs-dark {
+            border-color: #ABAC9C;
+            background-color: #ABAC9C !important;
+            background-image: linear-gradient(0deg, #ABAC9C, #ABAC9C 50%, transparent 50%);
+            color: #fff;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+            color: #fff;
+    }
+}
+  
+
   

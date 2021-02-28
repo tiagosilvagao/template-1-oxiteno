@@ -100,5 +100,10 @@
   "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmação não pode estar vazio.",
   "InvalidDate": "Data Inválida",
   "userName": "nome do usuário",
-  "password": "senha"
+  "password": "senha",
+  "submit": "Enivar",
+  "nomeProjeto": "Nome do ",
+  "projeto": " projeto",
+  "nameProject": "Nome do",
+  "nameToProject": "Nome do projeto"
 }

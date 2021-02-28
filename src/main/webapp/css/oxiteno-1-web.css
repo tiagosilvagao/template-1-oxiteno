@@ -53,6 +53,10 @@ label {
 .k-list .k-item.k-state-selected {
     color: #114C85;
 }
+.k-list .k-item:hover.k-state-selected {
+    color: #0470A0;
+}
+
 .k-block>.k-header, .k-calendar .k-calendar-view thead, .k-calendar .k-content thead, .k-calendar .k-header, .k-gantt-views.k-state-expanded, .k-menu-group, .k-menu.k-context-menu, .k-panel>.k-header, .k-popup, .k-treemap .k-treemap-title {
     color: #727176;
     background-color: #fff;
@@ -330,6 +334,10 @@ a {
         width: 100%;
         overflow-x: auto;
     }
+    .k-grid-header .k-header:focus, .k-grid-header .k-header a.k-link:focus {
+        color: #DEDC1C !important;
+        opacity: 1;
+    }
         /*atualizar focus*/
         .k-grid tbody .k-button:hover, .k-grid tbody .k-button:focus {
             background-color: #9CCB00;
@@ -380,6 +388,11 @@ a {
     .k-event {
         background-color: #114c85;
         color: #fff;
+    }
+    /*fonte dentro do calendario*/
+    .k-scheduler-header td, .k-scheduler-header th, .k-scheduler-times {
+        font-size: 14px;
+        color: #114C85;
     }
     /* titulo grid */
     .crn-grid-title {
@@ -576,7 +589,7 @@ a {
             border-color: #727176 !important;
         }
         .k-checkbox:indeterminate+.k-checkbox-label:before {
-            background-color: #114C85;
+            background-color: transparent;
             border-color: #114C85;
         }
         .k-checkbox-label:before {
@@ -848,3 +861,10 @@ a {
     }
 
 }
+  @media (min-width: 768px) and (max-width: 1170px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #114C85;
+}
+
+
+  }

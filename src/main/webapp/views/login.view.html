@@ -6,16 +6,18 @@
     		</div>
 		</div>
 		<div class="crn-header">
-			  <h1 class="text-center title component-holder col-md-12 col-xs-12 col-sm-12 fs-24" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-307023">Nome do <span class="crn-title--project">projeto</span></h1><div class="component-holder ng-binding ng-scope col-md-12 col-xs-12 col-sm-12" data-component="crn-textinput" id="crn-textinput-283724">
+			  <h1 class="text-center title fs-24" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-307023">{{"nameProject" | translate}}<span class="crn-title--project">{{"projeto" | translate}}</span></h1>
+			  <div class="component-holder ng-binding ng-scope col-md-12 col-xs-12 col-sm-12" data-component="crn-textinput" id="crn-textinput-283724">
 			</div>
 		</div>
 		<br>
-		<div class="crn-login">
-            <form class="form-validation" autocomplete="off" name="form" ng-submit="login()" role="form">
+		<div class="crn-login col-xs-12">
+            <form class="form-validation crn-form" autocomplete="off" name="form" ng-submit="login()" role="form">
                 <div class="text-danger wrapper text-center" ng-show="authError"></div>
 				<input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" id="input7274" placeholder="{{'userName' | translate}}" name="user"><br>
 				<input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" id="input9836" autocomplete="off" placeholder="{{'password' | translate}}"><br>
-				<input type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button">
+				<!--<input type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button">-->
+				<input type="submit" class="button" data-component="crn-button" placeholder="{{'submit' | translate}}">
 		    </form>
 		</div>
 	</div>
