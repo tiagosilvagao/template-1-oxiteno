@@ -405,6 +405,16 @@ ion-content button {
       .item-select select {
           color: #6D6E71;
       }
+
+    span.crn-title-projeto {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ccc;
+
+    }
       /*Caixa de Seleção Dinâmica 
       estilizado no componente "Caixa de seleção"
       */
@@ -646,7 +656,7 @@ ion-content button {
       }
       /* Item com ícone THEME */
       .default {
-          color: #55003B;
+          color: #97C93D;
       }
       .assertive {
           color: #9CCB00;

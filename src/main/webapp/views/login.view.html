@@ -1,23 +1,54 @@
-<div class="crn-body">
-		<div class="crn-grad"></div>
-		<div class="crn-logo--container">
-    		<div class="crn-logo">
-        		    <img src="img/logo-oxiteno.png">
-    		</div>
-		</div>
-		<div class="crn-header">
-			  <h1 class="text-center title fs-24" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-307023">{{"nameProject" | translate}}<span class="crn-title--project">{{"projeto" | translate}}</span></h1>
-			  <div class="component-holder ng-binding ng-scope col-md-12 col-xs-12 col-sm-12" data-component="crn-textinput" id="crn-textinput-283724">
-			</div>
-		</div>
-		<br>
-		<div class="crn-login col-xs-12">
-            <form class="form-validation crn-form" autocomplete="off" name="form" ng-submit="login()" role="form">
-                <div class="text-danger wrapper text-center" ng-show="authError"></div>
-				<input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" id="input7274" placeholder="{{'userName' | translate}}" name="user"><br>
-				<input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" id="input9836" autocomplete="off" placeholder="{{'password' | translate}}"><br>
-				<!--<input type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button">-->
-				<input type="submit" class="button" data-component="crn-button" placeholder="{{'submit' | translate}}">
-		    </form>
+  <!--<link rel="stylesheet" href="css/bootstrap4.min.css">-->
+	<div class="container-all">
+		<div class="container-login">
+			<div class="container-wrap-login">
+                <form class="container-form validate-form" autocomplete="off" name="form" ng-submit="login()" role="form">
+                    <input type="hidden" name="csrf_token" value="CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz" class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="text-danger wrapper text-center col-md-12 col-xs-12 col-sm-12" ng-show="authError"></div>
+                    <div class="component-holder ng-binding ng-scope col-xs-12  col-md-12 col-sm-12" data-component="crn-image" id="crn-image-823921">
+                            <img alt="Login" src="img/logo-oxiteno.png" class="center-block" xattr-position="center-block" data-component="crn-image">
+                    </div>
+                    <h1 class="text-center title component-holder col-md-12 col-xs-12 col-sm-12 fs-24" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-307023">Nome do projeto</h1><div class="component-holder ng-binding ng-scope col-md-12 col-xs-12 col-sm-12" data-component="crn-textinput" id="crn-textinput-283724">
+                        <div class="form-group">
+                            <label for="input7274">{{'Login.view.Username' | translate}}</label>
+                            <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" class="form-control k-textbox" id="input7274" placeholder="" autocomplete="username" autocorrect="off" autocapitalize="off">
+                        </div>
+                    </div>
+                    <div class="component-holder ng-binding ng-scope  col-xs-12 col-sm-12 col-md-12" data-component="crn-textinput" id="crn-textinput-343947">
+                        <div class="form-group">
+                            <label for="input9836">{{'Login.view.Password' | translate}}</label>
+                            <input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" class="form-control k-textbox" id="input9836" autocomplete="current-password" placeholder="">
+                        </div>
+                    </div>
+  
+                    <div class="component-holder ng-binding ng-scope col-xs-12 " data-component="crn-button">
+                        <div class="messages col-xs-12 col-md-12 col-sm-12">
+                            <div ng-show="message.error" class="help-block" data-container="true">
+                                {{message.error}}
+                            </div>
+                        </div>
+                        <a href="" class="cron-link col-xs-8 col-md-7 col-sm-6 m-t-10" target="_self" data-replace="true" data-component="crn-anchor" id="crn-anchor-508134">{{"esqueceuSenha" | translate}}</a><button role="button" aria-label="{{'Login.view.Login' | translate}}" class="btn btn-default k-button btn-primary col-xs-4 col-md-5  col-sm-6" type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button">
+                            <span>{{"Login.view.Login" | translate}} </span>
+                        </button>
+                    </div>
+                </form>
+				<div class="container-slider">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+							<!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+							<!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+							<!--<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>-->
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item">
+							    <span><img class="crn-logo--branco" src="node_modules/template_oxiteno_tres/webapp/css/img/logo.png"></span>
+								<img src="img/camacari_5.jpg" class="crn-dis--image" alt="1">
+							</div>
+						</div>
+				    </div>
+				</div>
 		</div>
 	</div>
+</div>

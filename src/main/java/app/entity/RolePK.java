@@ -8,35 +8,32 @@ import javax.xml.bind.annotation.*;
 
 /**
 * @generated
-*/
-@Embeddable
+*
+**/
 public class RolePK implements Serializable {
 
   /**
-  * UID da classe, necessário na serialização
   * @generated
   */
   private static final long serialVersionUID = 1L;
-  
+
   /**
    * @generated
    */
-  @Column(name = "id", insertable=true, updatable=true)
-  private java.lang.String id;
-  
+  private java.lang.String id = UUID.randomUUID().toString().toUpperCase();
+
   /**
    * @generated
    */
-  @Column(name = "fk_user", insertable=true, updatable=true)
   private java.lang.String user;
-  
+
   /**
    * Construtor
    * @generated
    */
   public RolePK(){
   }
-  
+
   /**
    * Obtém id
    * return id
@@ -45,7 +42,7 @@ public class RolePK implements Serializable {
   public java.lang.String getId(){
     return this.id;
   }
-  
+
   /**
    * Define id
    * @param id id
@@ -63,7 +60,7 @@ public class RolePK implements Serializable {
   public java.lang.String getUser(){
     return this.user;
   }
-  
+
   /**
    * Define user
    * @param user user
@@ -73,7 +70,7 @@ public class RolePK implements Serializable {
     this.user = user;
     return this;
   }
-  
+
   /**
    * @generated
    */
@@ -81,12 +78,12 @@ public class RolePK implements Serializable {
   public boolean equals(Object obj) {
     if (this == obj) return true;
     if (obj == null || getClass() != obj.getClass()) return false;
-    RolePK object = (RolePK)obj;
+RolePK object = (RolePK)obj;
     if (id != null ? !id.equals(object.id) : object.id != null) return false;
     if (user != null ? !user.equals(object.user) : object.user != null) return false;
     return true;
   }
-  
+
   /**
    * @generated
    */

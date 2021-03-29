@@ -6,6 +6,7 @@
         <class>app.entity.User</class>
         <class>app.entity.Role</class>
         <class>app.entity.Device</class>
+        <class>app.entity.agendador</class>
         <properties>
             <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
         </properties>
